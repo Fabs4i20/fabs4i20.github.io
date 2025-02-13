@@ -5,71 +5,69 @@
     box-sizing: border-box;
 }
 
-/* Body */
+/* Schriftart */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Parlow', sans-serif;
+}
+
+/* Oberer Bereich (Header) */
+header {
     background-color: #000; /* Schwarzer Hintergrund */
     color: #b4976f; /* Beige Schriftfarbe */
-}
-
-/* Navigation */
-nav {
-    background-color: #222; /* Dunklerer Hintergrund für Navigation */
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style-type: none;
     text-align: center;
+    padding: 30px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 20px;
+/* Titel im Header */
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
 }
 
-nav ul li a {
-    color: #b4976f; /* Beige Links */
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    color: #f5f5f5; /* Hellerer Hover-Effekt für Links */
+/* Abstand unter dem Header, um Platz für den Inhalt zu schaffen */
+body {
+    padding-top: 130px; /* Höhe des fixierten Headers */
 }
 
 /* Hauptinhalt */
-section {
-    padding: 40px 20px;
-    margin: 20px 0;
+.content {
+    background-color: #b4976f; /* Beiger Hintergrund */
+    color: #000; /* Schwarze Schrift */
+    height: 100vh; /* Volle Bildschirmhöhe */
 }
 
-#home {
-    background-color: #000;
-    color: #b4976f;
-    text-align: center;
+/* Leerbereich */
+.empty-space {
+    height: 80%; /* Der untere Bereich bleibt leer */
 }
 
-#home h1 {
-    font-size: 3em;
-}
-
-#about, #contact {
-    background-color: #000; /* Schwarzer Hintergrund für About und Contact */
-    color: #b4976f; /* Beige Schriftfarbe */
-}
-
-#about h2, #contact h2 {
-    font-size: 2em;
-}
-
-/* Footer */
+/* Footer (schwarzer Balken und Button) */
 footer {
-    background-color: #222;
-    color: #b4976f; /* Beige Schrift in der Fußzeile */
+    background-color: #000; /* Schwarzer Hintergrund */
+    color: #b4976f; /* Beige Schriftfarbe */
     text-align: center;
-    padding: 20px 0;
+    padding: 10px 0;
     position: fixed;
-    width: 100%;
     bottom: 0;
+    width: 100%;
+}
+
+footer button {
+    background-color: transparent;
+    color: #b4976f;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: 2px solid #b4976f;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+footer button:hover {
+    background-color: #b4976f;
+    color: #000;
 }
