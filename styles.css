@@ -8,13 +8,13 @@
 /* Body */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: #000; /* Schwarzer Hintergrund */
+    color: #b4976f; /* Beige Schriftfarbe */
 }
 
 /* Navigation */
 nav {
-    background-color: #222;
+    background-color: #222; /* Dunklerer Hintergrund für Navigation */
     padding: 10px 0;
 }
 
@@ -29,13 +29,13 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f5f5f5;
+    color: #b4976f; /* Beige Links */
     text-decoration: none;
     font-size: 18px;
 }
 
 nav ul li a:hover {
-    color: #b4976f; /* beige Hover-Effekt */
+    color: #f5f5f5; /* Hellerer Hover-Effekt für Links */
 }
 
 /* Hauptinhalt */
@@ -45,8 +45,8 @@ section {
 }
 
 #home {
-    background-color: #222;
-    color: #f5f5f5;
+    background-color: #000;
+    color: #b4976f;
     text-align: center;
 }
 
@@ -55,8 +55,8 @@ section {
 }
 
 #about, #contact {
-    background-color: #b4976f; /* beige Hintergrund */
-    color: #222;
+    background-color: #000; /* Schwarzer Hintergrund für About und Contact */
+    color: #b4976f; /* Beige Schriftfarbe */
 }
 
 #about h2, #contact h2 {
@@ -66,7 +66,7 @@ section {
 /* Footer */
 footer {
     background-color: #222;
-    color: #f5f5f5;
+    color: #b4976f; /* Beige Schrift in der Fußzeile */
     text-align: center;
     padding: 20px 0;
     position: fixed;
